@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('.tab_menu').click(function(){
       let index = $(this).index();
 
-      $('.tab_sub').eq(index).show().siblings().hide();
+      $('.tab_list').eq(index).show().siblings('.tab_list').hide();
       $(this).addClass("active").siblings().removeClass("active");
     });
   });

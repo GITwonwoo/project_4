@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,25 +13,28 @@ a {
   counter-reset: #333;
 }
 
-#warp {
-  margin: 0 auto;
-}
-
-ul, li, ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 header {
   margin: 0 auto;
   height: 300px;
-  background-color: gold;
 }
 
 header > div:nth-child(1) {
-  background-color: blue;
-  height: 50px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+header > div:nth-child(1) > div {
+  width: 50%;
+}
+
+header > div:nth-child(1) > div:nth-child(1) {
+  background-color: #ffddf8;
+  text-align: right;
+}
+
+header > div:nth-child(1) > div:nth-child(2) {
+  background-color: #5868d7;
 }
 
 header ul {
@@ -40,8 +44,67 @@ header ul {
 
 .bar {
   display: flex;
-  justify-content: space-around;
-  margin-top: 7%;
+  justify-content: center;
+}
+
+.bar > div {
+  margin: 100px 20px;
+}
+
+.search {
+  height: 35px;
+  width: 500px;
+  border: 3px solid skyblue;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+input {
+  font-size: 16px;
+  width: 430px;
+  padding: 10px;
+  border: 0;
+  outline: none;
+}
+
+.searchbtn {
+  width: 50px;
+  height: 100%;
+  border: 0;
+  background-color: skyblue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  float: right;
+}
+
+footer {
+  border: 10px double skyblue;
+  background-color: white;
+  height: 200px;
+}
+
+.snsbox {
+  margin-left: 0;
+}
+
+footer div {
+  background-color: skyblue;
+  height: 200px;
+}
+
+.snsbox {
+  margin-right: 0;
+}
+
+#warp {
+  margin: 0 auto;
+}
+
+ul, li, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #slider {
@@ -73,8 +136,7 @@ header ul {
 }
 
 #booklist {
-  width: 1000px;
-  height: 30%;
+  width: 1100px;
   margin: 3% auto;
 }
 
@@ -82,9 +144,6 @@ header ul {
   height: 30%;
   background-color: white;
   display: flex;
-  border-top: 1px solid #787878;
-  border-left: 1px solid #787878;
-  border-right: 1px solid #787878;
 }
 
 #booklist li {
@@ -93,32 +152,42 @@ header ul {
   text-align: center;
   cursor: pointer;
   padding-top: 7px;
+  border-top: 1px solid #787878;
+}
+
+#booklist li:first-of-type {
+  border-left: 1px solid #787878;
+}
+
+#booklist li:last-of-type {
+  border-right: 1px solid #787878;
+}
+
+/*탭 선택시 나오는부분*/
+#booklist li.active {
+  background-color: skyblue;
+  color: #fff;
+  border-left: 1px solid skyblue;
+  border-right: 1px solid skyblue;
+}
+
+.tab_list:not(:first-of-type) {
+  display: none;
 }
 
 .tab_list {
-  width: 1000px;
-  height: 700px;
+  width: 1100px;
+  height: 800px;
   background-color: skyblue;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.tab_sub {
-  width: 22%;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .box {
-  width: 300px;
-  height: 450px;
+  width: 200px;
+  height: 320px;
   float: left;
   text-align: center;
   margin: 20px;
-  padding: 15px 30px;
+  padding: 5px 15px;
   border-radius: 4px;
   border: 1px solid #ddd;
   box-shadow: 4px 4px 4px #eee;
@@ -128,9 +197,4 @@ header ul {
   font-size: 11px;
   color: #666;
   text-align: left;
-}
-
-footer {
-  background-color: blue;
-  height: 200px;
 }

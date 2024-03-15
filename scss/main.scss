@@ -3,11 +3,7 @@
 #warp{margin: 0 auto;}
 ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
-// 헤더 //
-header{margin: 0 auto; height: 300px; background-color: gold;}
-header>div:nth-child(1){background-color:  blue; height: 50px;}
-header ul{display: flex; justify-content: flex-end;} 
-.bar{display: flex; justify-content: space-around; margin-top: 7%;}
+
 
 // 맨처음 슬라이더 //
 #slider{height: 700px; background-color: aqua; margin: 0 auto;}
@@ -20,19 +16,40 @@ header ul{display: flex; justify-content: flex-end;}
 
 
 //MD 추천도서 //
-#booklist{width:1000px; height:30%; margin: 3% auto;}
+#booklist{width:1100px; margin: 3% auto;}
 #booklist ul { height:30%; background-color:white; display: flex;
- border-top: 1px solid #787878; border-left: 1px solid #787878;
-border-right: 1px solid#787878;}
-#booklist li {width: 25%; height:25px; text-align: center; cursor:pointer; padding-top:7px; }
+//  border-top: 1px solid #787878; border-left: 1px solid #787878; 
+// border-right: 1px solid#787878;
+}
+#booklist li {width: 25%; height:25px; text-align: center; cursor:pointer; padding-top:7px; border-top: 1px solid #787878;}
+#booklist li:first-of-type{border-left: 1px solid #787878;}
+#booklist li:last-of-type{border-right: 1px solid#787878;}
 
-.tab_list {width:1000px; height:700px; background-color: skyblue; display: flex; flex-wrap: wrap; justify-content: space-around;}
-.tab_sub{width: 22%;}
- * {box-sizing:border-box;}
-      .box {width:300px; height:450px; float:left; text-align:center; margin:20px; padding:15px  30px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
-       .box p {font-size:11px; color:#666; text-align:left;} 
 
-///* footer*///
-footer{background-color: blue; height: 200px;}
+      /*탭 선택시 나오는부분*/
+
+      #booklist li.active{background-color: skyblue; color:#fff; border-left: 1px solid skyblue; border-right: 1px solid
+          skyblue;}
+
+      .tab_list:not(:first-of-type) {display:none;}
+
+
+     .tab_list {width:1100px; height:800px; background-color: skyblue; }
+
+    
+     .box {width:200px; height:320px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
+     .box p {font-size:11px; color:#666; text-align:left;} 
+   
+
+
+
+
+
+
+
+
+
+
+
 
 
