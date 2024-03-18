@@ -5,9 +5,14 @@
     <title></title>
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/API.js"></script>
+    
+
 </head>
 
 <body>
@@ -15,7 +20,7 @@
         <header>
             <div>
                 <div><img src="img/banner1.jpg" alt="banner1"></div>
-                <div><img src="img/banner2.jpg" alt="banner2"></div>  
+                <div><img src="img/banner2.jpg" alt="banner2"></div>
             </div>
 
             <div>
@@ -36,9 +41,20 @@
                     <input type=" text" placeholder="검색어입력">
                     <button class="searchbtn">검색</button>
                 </div>
-                <div>
-                    <img src="" alt="">광고배너
-                    <div>넘기기</div>
+
+                <div class="logomenu">
+                    <div class="banner">
+                        <img src="img/top_small_betaopen.png" alt="">
+                    </div>
+                    <div class="banner">
+                        <img src="img/top_small_store.png" alt="">
+                    </div>
+
+                    <div>
+                        <p></p>
+                        <button class="leftbtn">&lt;</button>
+                        <button class="rightbtn">&gt;</button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -46,28 +62,56 @@
         <!-- 맨처음 슬라이더 -->
         <section class="sectionone">
             <div id="slider">
-                <div>
+                <div class="sliderbox">
                     <ul class="sliderlist">
-                        <li>베스트도서</li>
-                        <li>신간도서</li>
-                        <li>국내도서</li>
-                        <li>외국도서</li>
-                        <li>이벤트</li>
-                        <li>기획/테마</li>
-                        <li>문화행사</li>
-                        <li>기프티콘</li>
-                        <li>회원혜택</li>
-                        <li>출석체크</li>
+                        <li>
+                            <p>베스트도서</p>
+                        </li>
+                        <li>
+                            <p>신간도서</p>
+                        </li>
+                        <li>
+                            <p>국내도서</p>
+                        </li>
+                        <li>
+                            <p>외국도서</p>
+                        </li>
+                        <li>
+                            <p>이벤트</p>
+                        </li>
+                        <li>
+                            <p>기획/테마</p>
+                        </li>
+                        <li>
+                            <p>문화행사</p>
+                        </li>
+                        <li>
+                            <p>기프티콘</p>
+                        </li>
+                        <li>
+                            <p>회원혜택</p>
+                        </li>
+                        <li>
+                            <p>출석체크</p>
+                        </li>
                     </ul>
                 </div>
-                <div class="sliderflugin">
-                    <ul>
-                        <li>d<img src="" alt=""></li>
-                        <li>d<img src="" alt=""></li>
-                        <li>d<img src="" alt=""></li>
-                    </ul>
+
+            <div class="bigswiper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/main1.jpg" alt="main1"></div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
+        </div>
         </section>
         <!-- 마우스슬라이더 -->
         <section class="sectiontwo">
@@ -167,11 +211,69 @@
         </section>
 
         <footer>
-            <div>
+            <div class="footerdiv">
+                <div class="footerflex">
+                    <div class="footerimgbox">
+                        <img src="img/quick01.png" alt="quick01">
+                        <h4>출석체크</h4>
+                    </div>
+                    <div class="footerimgbox">
+                        <img src="img/quick02.png" alt="quick02">
+                        <h4>기프티콘/h4>
+                    </div>
+                    <div class="footerimgbox">
+                        <img src="img/quick03.png" alt="quick03">
+                        <h4>나우드림</h4>
+                    </div>
+                    <div class="footerimgbox">
+                        <img src="img/quick04.png" alt="quick04">
+                        <h4>공지사항</h4>
+                    </div>
+                    <div class="footerimgbox">
+                        <img src="img/quick05.png" alt="quick05">
+                        <h4>영업점안내</h4>
+                    </div>
+                    <div class="footerimgbox">
+                        <img src="img/quick06.png" alt="quick06">
+                        <h4>고객센터</h4>
+                    </div>
+                </div>
+
+                <div>
+                    <ul class="footerul">
+                        <li>
+                            <h6>회사소개</h6>
+                        </li>
+                        <li>
+                            <h6>광고안내</h6>
+                        </li>
+                        <li>
+                            <h6>입점문의</h6>
+                        </li>
+                        <li>
+                            <h6>청약철회</h6>
+                        </li>
+                        <li>
+                            <h6>청소년보호정책</h6>
+                        </li>
+                        <li>
+                            <h6>이용약관</h6>
+                        </li>
+                        <li>
+                            <h6>개인정보처리방침</h6>
+                        </li>
+                        <li>
+                            <h6>영상정보관리방침</h6>
+                        </li>
+                        <li>
+                            <h6>이메일 무단 수집거부</h6>
+                        </li>
+                    </ul>
+                </div>
                 <div class="snsbox">
-                    <img src="img/facebook.png" alt="facebook">
-                    <img src="img/twitch.png" alt="twitch">
-                    <img src="img/twitter.png" alt="twitter">
+                    <img src="img/instagram.png" alt="instagram">
+                    <img src="img/kakao.png" alt="kakao">
+                    <img src="img/youtube.png" alt="youtube">
                 </div>
             </div>
         </footer>

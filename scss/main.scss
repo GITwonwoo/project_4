@@ -5,11 +5,48 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
 
 
-// 맨처음 슬라이더 //
-#slider{height: 700px; background-color: aqua; margin: 0 auto;}
-.sliderlist{display: flex; justify-content: center;}
-.sliderlist li{padding: 2%; background-color: green;}
+// 맨처음 마우스호버 //
+#slider{height: 400px;margin: 0 auto;}
+.sliderlist{display: flex; width: 1100px; margin: 0 auto;}
+.sliderlist li{box-sizing: content-box; border: 10px double skyblue; width: 100%; ; text-align: center; margin:0 2px;
+}
+.sliderlist li:hover{cursor: pointer;}
+.sliderlist p{background-color: skyblue; color: white; font-weight: bold;}
 .sliderflugin{height: 500px; background-color: red;}
+//맨처음 대형 슬라이더//
+.bigswiper {
+    position: relative;
+    height: 100%;
+    background-color: gold;
+  }
+
+.mySwiper{background-color: red; margin: 0 auto;}
+.swiper { 
+    width: 1100px;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+
+
+
 
 //마우스 클릭 슬라이더 //
 .sectiontwo{margin:0 auto; width:1000px;; height: 200px; background-color: gold;}
@@ -33,12 +70,13 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
       .tab_list:not(:first-of-type) {display:none;}
 
-
      .tab_list {width:1100px; height:800px; background-color: skyblue; }
 
     
      .box {width:200px; height:320px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
      .box p {font-size:11px; color:#666; text-align:left;} 
+
+
    
 
 

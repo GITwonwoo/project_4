@@ -1,3 +1,48 @@
+//메인 사이드 광고
+$(function() {
+  let page = $('.banner:visible').index()+1;
+  let bannerlen = $('.banner').length;
+  
+  $(".logomenu p").text(`${page} / ${bannerlen}`)
+
+  $('.leftbtn').click(function() {
+      --page;
+      if(page == 0){
+        page = bannerlen;
+      }
+      $('.banner').eq(page-1).fadeIn().siblings('.banner').hide();
+      $(".logomenu p").text(`${page} / ${bannerlen}`)
+  });
+
+  $('.rightbtn').click(function() {
+      ++page;
+      if(page > bannerlen){
+        page=1;
+      }
+      $('.banner').eq(page-1).fadeIn().siblings('.banner').hide();
+      $(".logomenu p").text(`${page} / ${bannerlen}`)
+  });
+
+
+  // 메인 대형슬라이더
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+});
 
 //마우스 클릭 슬라이더
 $('.prev').click(function(){
@@ -35,3 +80,4 @@ $(document).ready(function(){
       $(this).addClass("active").siblings().removeClass("active");
     });
   });
+
