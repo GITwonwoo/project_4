@@ -26,10 +26,11 @@ $(function() {
 
   // 메인 대형슬라이더
   var swiper = new Swiper(".mySwiper", {
-    spaceBetween: 30,
+    spaceBetween: 30,    
     centeredSlides: true,
+    effect: "fade",
     autoplay: {
-      delay: 2500,
+      delay: 2000,
       disableOnInteraction: false,
     },
     pagination: {
@@ -40,33 +41,44 @@ $(function() {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    on: {
+      slideChange: function () {
+        let bgcolor=["#efefef","#cdfcd8","#fff3d9","#fff7c0","#ffe9dc"]
+       
+        let idx=this.activeIndex
+        $(".bigswiper").css("background-color",bgcolor[idx]).css("transition","0.4s")
+      }
+    },
   });
 
 });
 
 //마우스 클릭 슬라이더
+$(document).ready(function(){
+
 $('.prev').click(function(){
 
-    $('.slide li:last').prependTo('.slide');
+  $('.sld li:last').prependTo('.sld');
 
-    $('.slide').css('margin-left',-1000);
+  $('.sld').css('margin-left',-1000);
 
-    $('.slide').stop().animate({marginLeft:0},800);
+  $('.sld').stop().animate({marginLeft:0},800);
 
- });
+});
 
 
- $('.next').click(function(){
+$('.next').click(function(){
 
-   $('.slide').stop().animate({marginLeft:-1000},800, function(){
+ $('.sld').stop().animate({marginLeft:-1000},800, function(){
 
-      $('.slide li:first').appendTo('.slide');
+    $('.sld li:first').appendTo('.sld');
 
-      $('.slide').css({marginLeft:0});
-
-   });
+    $('.sld').css({marginLeft:0});
 
  });
+
+});
+});
 
 
 
