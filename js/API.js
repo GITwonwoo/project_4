@@ -1,3 +1,26 @@
+let banner = ["박경림","동물","차"];
+
+for (let i = 0; i < banner.length; i++) {
+
+    $.ajax({
+        method: "GET",
+        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        data: { query: banner[i] },
+        headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
+    })
+        .done(function (msg) {
+            const divs = $(".sldimg");
+            divs.eq(i).children('.imgbtn').prepend("<img src='" + msg.documents[0].thumbnail + "'/>");
+            divs.eq(i).children('.content').append("<h4>" + msg.documents[0].title + "</h4>");
+            divs.eq(i).children('.content').append("<h6>" + msg.documents[0].authors + "</h6>");
+
+            let str = msg.documents[0].contents;
+            let str2 = str.substring(0, 60);
+
+            divs.eq(i).children('.content').append("<p>" + str2 + "..." + "</p>");            
+        });
+}
+
 // ---------------------- MD추천도서------------------------
 let choice = ["박경림", "기욤뮈소", "박완서", "경제", "한국사", "파리", "여행", "음식"];
 
