@@ -60,11 +60,12 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
 
 //마우스 클릭 슬라이더 //
-.sectiontwo{margin: 0 auto; width:1000px; height: 300px; margin-top: 5%;
+.sectiontwo{margin: 0 auto; width:1000px; height: 350px; margin-top: 5%;
   span{position: absolute; top:50%; display: block; font-size: 35px; color:#fff; line-height: 40px; 
     background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
-    span:hover{background: rgba(255,255,255,0.8); color:#000;}
-}
+    span:hover{background: rgba(255,255,255,0.8); color:#000;} }
+    
+        
         * {margin: 0;}
          ul,li,ol {list-style: none; margin: 0; padding: 0;}
          .mouseslider {width: 1000px;  position: relative; overflow: hidden;}
@@ -72,30 +73,43 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
          .sld {width: 3000px; }
          .sld li {width: 1000px;  float: left;}
          
-        .sldimg{display: flex; align-items: center; justify-content: space-around; background-color: skyblue;}
+        .sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:skyblue; height: 290px;
+        border-radius: 20px;}
         
+        .content{ background-color: white;
+        width: 50%; border-radius: 30px; padding: 5%;}
 
-        .imgbtn{position: relative; width: 15%;}
+        .imgbtn{position: relative; width: 15%;
+        }
+        .imgbtn:hover .btns{opacity: 1;}
         .imgbtn img{width: 100%;}
-        .btns{position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: #333;}
-        
-
-          
+        .btns{position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: #333; display: flex; justify-content: space-evenly; opacity: 0;
+          transition: opacity 0.5s;
+         button{width: 40%; height: 100%;
+        background-color: white; color: #666; font-weight: bold;}
+         button:hover{opacity: 0.5;}
+        }
 
          .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
          .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
+      
 
 
 
 //MD 추천도서 //
-#booklist{width:1100px; margin: 0 auto; margin-bottom: 2%;}
+
+#booklist{width:1100px; margin: 0 auto; margin-top: 5%;}
 #booklist ul { height:30%; background-color:white; display: flex;
-//  border-top: 1px solid #787878; border-left: 1px solid #787878; 
-// border-right: 1px solid#787878;
+
 }
 #booklist li {width: 25%; height:25px; text-align: center; cursor:pointer; padding-top:7px; border-top: 1px solid #787878;}
 #booklist li:first-of-type{border-left: 1px solid #787878;}
 #booklist li:last-of-type{border-right: 1px solid#787878;}
+
+.tab{position: relative;}
+.tab .imgbtn{position: relative; width: 85%; margin: 0 auto;}
+
+
 
 
       /*탭 선택시 나오는부분*/
@@ -105,13 +119,46 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
       .tab_list:not(:first-of-type) {display:none;}
 
-     .tab_list {width:1100px; height:800px; background-color: skyblue; }
+     .tab_list {width:1100px; height:770px; background-color: skyblue; }
 
     
-     .box {width:200px; height:320px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
-     .box p {font-size:10px; color:#666; text-align:left;} 
+     .box {width:200px; height:335px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
+     .box p {font-size:10px; color:#666; text-align:left;}
+     
+    //  색션4 주간베스트
+     .sectionfour{margin: 0 auto; width:1000px; height: 350px; margin-top: 5%;
+     span{position: absolute; top:50%; display:none; font-size: 35px; color:#fff;  line-height: 40px; 
+     background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
+     span:hover{background: rgba(255,255,255,0.8); color:#000;}
 
+   
 
+        * {margin: 0;}
+         ul,li,ol {list-style: none; margin: 0; padding: 0;}
+         .mouseslider {width: 1000px;  position: relative; overflow: hidden;}
+
+         .sld {width: 3000px; }
+         .sld li {width: 1000px;  float: left;}
+         
+        .sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:skyblue; height: 290px;
+        border-radius: 20px;}
+        
+      
+        .imgbtn{position: relative; width: 15%;
+        }
+        .imgbtn:hover .btns{opacity: 1;}
+        .imgbtn img{width: 100%;}
+        .btns{position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: #333; display: flex; justify-content: space-evenly; opacity: 0;
+          transition: opacity 0.5s;}
+   
+         .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px; }
+         .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
+         
+        }
+    
+            
+        
+               
    
 
 

@@ -11,13 +11,13 @@ for (let i = 0; i < banner.length; i++) {
         .done(function (msg) {
             const divs = $(".sldimg");
             divs.eq(i).children('.imgbtn').prepend("<img src='" + msg.documents[0].thumbnail + "'/>");
-            divs.eq(i).children('.content').append("<h4>" + msg.documents[0].title + "</h4>");
-            divs.eq(i).children('.content').append("<h6>" + msg.documents[0].authors + "</h6>");
 
             let str = msg.documents[0].contents;
             let str2 = str.substring(0, 60);
 
-            divs.eq(i).children('.content').append("<p>" + str2 + "..." + "</p>");            
+            divs.eq(i).children('.content').prepend("<p>" + str2 + "..." + "</p>");       
+            divs.eq(i).children('.content').prepend("<h6>" + msg.documents[0].authors + "</h6>");
+            divs.eq(i).children('.content').prepend("<h4>" + msg.documents[0].title + "</h4>");    
         });
 }
 
@@ -33,20 +33,17 @@ for (let i = 0; i < choice.length; i++) {
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
         .done(function (msg) {
-            const divs = $(".tab_list").eq(0).children('.box');
-            divs.eq(i).append("<img src='" + msg.documents[0].thumbnail + "'/>");
+            const divs = $(".sectionthree .tab_list").eq(0).children(".sectionthree .box");
+            divs.eq(i).children('.sectionthree .imgbtn').prepend("<img src='" + msg.documents[0].thumbnail + "'/>");
             divs.eq(i).append("<h4>" + msg.documents[0].title + "</h4>");
             divs.eq(i).append("<h6>" + msg.documents[0].authors + "</h6>");
 
-            let str = msg.documents[0].contents;
-            let str2 = str.substring(0, 60);
-
-            divs.eq(i).append("<p>" + str2 + "..." + "</p>");
-            divs.eq(i).append("<button>" + "click" + "</button>");
+   
+           
         });
 }
 // ---------------------- 화제의신간------------------------
-let newbook = ["박경림", "기욤뮈소", "박완서", "경제", "한국사", "파리", "여행", "음식"];
+let newbook = ["이중섭", "기욤뮈소", "김민수", "경제", "부동산", "도쿄", "여행", "음식"];
 
 for (let i = 0; i < newbook.length; i++) {
 
@@ -57,18 +54,15 @@ for (let i = 0; i < newbook.length; i++) {
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
 
-        .done(function (msg) {
-            const divs = $(".tab_list").eq(1).children('.box');
-            divs.eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
-            divs.eq(i).append("<h4>" + msg.documents[i].title + "</h4>");
-            divs.eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
+    .done(function (msg) {
+        const divs = $(".sectionthree .tab_list").eq(1).children(".sectionthree .box");
+        divs.eq(i).children('.sectionthree .imgbtn').prepend("<img src='" + msg.documents[1].thumbnail + "'/>");
+        divs.eq(i).append("<h4>" + msg.documents[1].title + "</h4>");
+        divs.eq(i).append("<h6>" + msg.documents[1].authors + "</h6>");
 
-            let str = msg.documents[i].contents;
-            let str2 = str.substring(0, 60);
 
-            divs.eq(i).append("<p>" + str2 + "..." + "</p>");
-            divs.eq(i).append("<button>" + "click" + "</button>");
-        });
+       
+    });
 }
 
 let steady = ["스테디", "경제", "자기개발","경제","한국사","수면","여행","음식"];
@@ -83,39 +77,55 @@ $.ajax({
    })
    
    .done(function (msg) {
+    const divs = $(".sectionthree .tab_list").eq(2).children(".sectionthree .box");
+    divs.eq(i).children('.sectionthree .imgbtn').prepend("<img src='" + msg.documents[2].thumbnail + "'/>");
+    divs.eq(i).append("<h4>" + msg.documents[2].title + "</h4>");
+    divs.eq(i).append("<h6>" + msg.documents[2].authors + "</h6>");
 
-    const divs = $(".tab_list").eq(2).children('.box');
+    // // let str = msg.documents[0].contents;
+    // // let str2 = str.substring(0, 60);
 
-        divs.eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
-        divs.eq(i).append("<h4>" + msg.documents[i].title + "</h4>");
-        divs.eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
-
-        let str = msg.documents[i].contents;
-        let str2 = str.substring(0, 60);
-
-        divs.eq(i).append("<p>" + str2 + "..."+"</p>");
-        divs.eq(i).append("<button>" + "click" + "</button>");
-    });
+    // divs.eq(i).append("<p>" + str2 + "..." + "</p>");
+   
+});
 }
 
 $.ajax({
     method:"GET" , 
     url: "https:dapi.kakao.com/v3/search/book?target=title",
-    data:{query: "만화"},
+    data:{query: "개그",},
     headers:{Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332"}
    })
    
    .done(function (msg) {
-    const divs = $(".tab_list").eq(3).children('.box');
+    console.log(msg)
+    const divs = $(".sectionthree .tab_list").eq(3).children(".sectionthree .box");
     for (let i = 0; i < divs.length; i++) {
-        divs.eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
+        divs.eq(i).children('.sectionthree .imgbtn').prepend("<img src='" + msg.documents[i].thumbnail + "'/>");
         divs.eq(i).append("<h4>" + msg.documents[i].title + "</h4>");
         divs.eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
 
-        let str = msg.documents[i].contents;
-        let str2 = str.substring(0, 60);
+        // // let str = msg.documents[i].contents;
+        // // let str2 = str.substring(0, 60);
 
-        divs.eq(i).append("<p>" + str2 +"..."+ "</p>");
-        divs.eq(i).append("<button>" + "click" + "</button>");
+        // divs.eq(i).append("<p>" + str2 +"..."+ "</p>");
+        // // divs.eq(i).append("<button>" + "click" + "</button>");
     }
 });
+// 333
+
+
+// .done(function (msg) {
+//     const divs = $(".tab_list").eq(3).children('.box');
+//     for (let i = 0; i < divs.length; i++) {
+//         divs.eq(i).append("<img src='" + msg.documents[i].thumbnail + "'/>");
+//         divs.eq(i).append("<h4>" + msg.documents[i].title + "</h4>");
+//         divs.eq(i).append("<h6>" + msg.documents[i].authors + "</h6>");
+
+//         let str = msg.documents[i].contents;
+//         let str2 = str.substring(0, 60);
+
+//         divs.eq(i).append("<p>" + str2 +"..."+ "</p>");
+//         // divs.eq(i).append("<button>" + "click" + "</button>");
+//     }
+// });

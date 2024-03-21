@@ -56,24 +56,24 @@ $(function() {
 //마우스 클릭 슬라이더
 $(document).ready(function(){
 
-$('.prev').click(function(){
+$('.sectiontwo .prev').click(function(){
 
-  $('.sld li:last').prependTo('.sld');
+  $('.sectiontwo .sld li:last').prependTo('.sectiontwo .sld');
 
-  $('.sld').css('margin-left',-1000);
+  $('.sectiontwo .sld').css('margin-left',-1000);
 
-  $('.sld').stop().animate({marginLeft:0},800);
+  $('.sectiontwo .sld').stop().animate({marginLeft:0},800);
 
 });
 
 
 $('.next').click(function(){
 
- $('.sld').stop().animate({marginLeft:-1000},800, function(){
+ $('.sectiontwo .sld').stop().animate({marginLeft:-1000},800, function(){
 
-    $('.sld li:first').appendTo('.sld');
+    $('.sectiontwo .sld li:first').appendTo('.sectiontwo .sld');
 
-    $('.sld').css({marginLeft:0});
+    $('.sectiontwo .sld').css({marginLeft:0});
 
  });
 
@@ -93,3 +93,17 @@ $(document).ready(function(){
     });
   });
 
+
+$(document).ready(function(){
+
+  $('.sectionfour .sldimg').mouseenter(function(){
+    $('.sectionfour span').show()
+  })
+  $('.sectionfour .sldimg').mouseout(function(){
+    $('.sectionfour span').hide()
+  }) 
+  
+  $('.sectionfour span').mouseenter(function(){
+    $('.sectionfour span').show()
+  })
+});
