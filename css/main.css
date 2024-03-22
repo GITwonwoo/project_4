@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
 footer h6, h4 {
   font-family: "Noto Sans KR", sans-serif;
@@ -216,7 +215,7 @@ ul, li, ol {
   margin: 0 auto;
   width: 1000px;
   height: 350px;
-  margin-top: 5%;
+  margin-top: 6%;
 }
 .sectiontwo span {
   position: absolute;
@@ -234,91 +233,52 @@ ul, li, ol {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
 }
-
-* {
+.sectiontwo content h6, .sectiontwo h4, .sectiontwo p {
+  margin: 5% 0;
+}
+.sectiontwo h3 {
+  margin: 30px;
+}
+.sectiontwo * {
   margin: 0;
 }
-
-ul, li, ol {
+.sectiontwo ul, .sectiontwo li, .sectiontwo ol {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-.mouseslider {
+.sectiontwo .mouseslider {
   width: 1000px;
   position: relative;
   overflow: hidden;
 }
-
-.sld {
+.sectiontwo .sld {
   width: 3000px;
 }
-
-.sld li {
+.sectiontwo .sld li {
   width: 1000px;
   float: left;
 }
-
-.sldimg {
+.sectiontwo .sldimg {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: skyblue;
+  background-color: lightgrey;
   height: 290px;
   border-radius: 20px;
 }
-
-.content {
+.sectiontwo .content {
   background-color: white;
   width: 50%;
   border-radius: 30px;
-  padding: 5%;
+  padding: 1%;
 }
-
-.imgbtn {
-  position: relative;
-  width: 15%;
-}
-
-.imgbtn:hover .btns {
-  opacity: 1;
-}
-
-.imgbtn img {
-  width: 100%;
-}
-
-.btns {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #333;
-  display: flex;
-  justify-content: space-evenly;
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-.btns button {
-  width: 40%;
-  height: 100%;
-  background-color: white;
-  color: #666;
-  font-weight: bold;
-}
-.btns button:hover {
-  opacity: 0.5;
-}
-
-.prev {
+.sectiontwo .prev {
   left: 0;
   border-radius: 0 10px 10px 0px;
   padding: 0 8px 0 2px;
 }
-
-.next {
+.sectiontwo .next {
   right: 0;
   border-radius: 10px 0px 0px 10px;
   padding: 0 2px 0 8px;
@@ -363,7 +323,42 @@ ul, li, ol {
   margin: 0 auto;
 }
 
-/*탭 선택시 나오는부분*/
+.imgbtn {
+  position: relative;
+  width: 15%;
+}
+
+.imgbtn:hover .btns {
+  opacity: 1;
+}
+
+.imgbtn img {
+  width: 100%;
+}
+
+.btns {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-evenly;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.btns button {
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  color: #666;
+  font-weight: bold;
+}
+.btns button:hover {
+  opacity: 0.5;
+}
+
 #booklist li.active {
   background-color: skyblue;
   color: #fff;
@@ -421,6 +416,20 @@ ul, li, ol {
   background: rgba(255, 255, 255, 0.8);
   color: #000;
 }
+.sectionfour .mouseslider {
+  border-radius: 20px;
+}
+.sectionfour h3 {
+  margin: 30px;
+}
+.sectionfour .titlelogoflex {
+  display: flex;
+  justify-content: space-between;
+}
+.sectionfour .lotatelogo:hover img {
+  transition: all 0.5s linear;
+  transform: rotate(180deg);
+}
 .sectionfour * {
   margin: 0;
 }
@@ -435,19 +444,18 @@ ul, li, ol {
   overflow: hidden;
 }
 .sectionfour .sld {
-  width: 3000px;
+  width: 200%;
 }
 .sectionfour .sld li {
-  width: 1000px;
+  width: 10%;
   float: left;
 }
 .sectionfour .sldimg {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: skyblue;
+  background-color: lightgray;
   height: 290px;
-  border-radius: 20px;
 }
 .sectionfour .imgbtn {
   position: relative;
@@ -480,4 +488,57 @@ ul, li, ol {
   right: 0;
   border-radius: 10px 0px 0px 10px;
   padding: 0 2px 0 8px;
+}
+
+.sectionfive {
+  margin: 0 auto;
+  width: 1000px;
+  margin-top: 5%;
+}
+.sectionfive .sldimg {
+  height: 290px;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+.sectionfive h3 {
+  margin: 20px;
+}
+.sectionfive .titlelogoflex {
+  display: flex;
+  justify-content: space-between;
+}
+.sectionfive .lotatelogo:hover img {
+  transition: all 0.5s linear;
+  transform: rotate(180deg);
+}
+.sectionfive .sldimg {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: lightgrey;
+  height: 290px;
+  border-radius: 20px;
+}
+.sectionfive .sldimg img {
+  width: 100%;
+}
+.sectionfive .content {
+  background-color: white;
+  width: 50%;
+  border-radius: 30px;
+  padding: 1%;
+}
+.sectionfive .content h6, .sectionfive h4, .sectionfive p {
+  margin: 5% 0;
+}
+.sectionfive .bookflex {
+  display: flex;
+  margin: 3% auto;
+  width: 1000px;
+  justify-content: space-evenly;
+}
+.sectionfive .bookflex .sldimg2 {
+  width: 300px;
+  background-color: skyblue;
+  height: 200px;
 }

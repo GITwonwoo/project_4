@@ -93,17 +93,49 @@ $(document).ready(function(){
     });
   });
 
-
+//section 4 마우스 호버
 $(document).ready(function(){
 
-  $('.sectionfour .sldimg').mouseenter(function(){
+  $('.sectionfour .sldimg').mouseover(function(){
     $('.sectionfour span').show()
   })
   $('.sectionfour .sldimg').mouseout(function(){
     $('.sectionfour span').hide()
   }) 
   
-  $('.sectionfour span').mouseenter(function(){
+  $('.sectionfour span').mouseover(function(){
     $('.sectionfour span').show()
   })
+  $('.sectionfour img').mouseenter(function(){
+    $('.sectionfour img').show()
+  })
 });
+
+
+//마우스 클릭 슬라이더
+$(document).ready(function(){
+
+  $('.sectionfour .prev').click(function(){
+  
+    $('.sectionfour .sld li:last').prependTo('.sectionfour .sld');
+  
+    $('.sectionfour .sld').css('margin-left','-20%');
+  
+    $('.sectionfour .sld').stop().animate({marginLeft:0},800);
+  
+  });
+  
+  
+  $('.sectionfour .next').click(function(){
+  
+   $('.sectionfour .sld').stop().animate({marginLeft:'-20%'},800, function(){
+  
+      $('.sectionfour .sld li:first').appendTo('.sectionfour .sld');
+  
+      $('.sectionfour .sld').css({marginLeft:0});
+  
+   });
+  
+  });
+  });
+  

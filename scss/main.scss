@@ -1,22 +1,12 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
-
-footer h6,h4{font-family: 'Noto Sans KR', sans-serif;}
-          
-
+footer h6,h4{font-family: 'Noto Sans KR', sans-serif;}         
 @import"reset","common";
-
-
 
 #warp{margin: 0 auto;}
 ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
-
-
-
-
-// 맨처음 마우스호버 //
+//section 1 list 마우스호버 //
 #slider{height: 400px;margin: 0 auto;}
 .sliderlist{display: flex; width: 1100px; margin: 0 auto;}
 .sliderlist li{box-sizing: content-box; border: 10px double skyblue; width: 100%; ; text-align: center; margin:0 2px;
@@ -24,7 +14,7 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 .sliderlist li:hover{cursor: pointer;}
 .sliderlist p{background-color: skyblue; color: white; font-weight: bold;}
 .sliderflugin{height: 500px;}
-//맨처음 대형 슬라이더//
+//section 1 대형 슬라이더//
 .bigswiper {
     position: relative;
     height: 100%;
@@ -53,54 +43,31 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
     object-fit: cover;
   }
 
+//section 2 마우스 클릭 슬라이더 //
+.sectiontwo{margin: 0 auto; width:1000px; height: 350px; margin-top: 6%;
+span{position: absolute; top:50%; display: block; font-size: 35px; color:#fff; line-height: 40px; 
+background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
+span:hover{background: rgba(255,255,255,0.8); color:#000;} content h6,h4,p{margin: 5% 0;}
+h3{margin: 30px;}
+           
+* {margin: 0;}
+ ul,li,ol {list-style: none; margin: 0; padding: 0;}
+ .mouseslider {width: 1000px;  position: relative; overflow: hidden;}
 
-
-
-
-
-
-//마우스 클릭 슬라이더 //
-.sectiontwo{margin: 0 auto; width:1000px; height: 350px; margin-top: 5%;
-  span{position: absolute; top:50%; display: block; font-size: 35px; color:#fff; line-height: 40px; 
-    background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
-    span:hover{background: rgba(255,255,255,0.8); color:#000;} }
-    
-        
-        * {margin: 0;}
-         ul,li,ol {list-style: none; margin: 0; padding: 0;}
-         .mouseslider {width: 1000px;  position: relative; overflow: hidden;}
-
-         .sld {width: 3000px; }
-         .sld li {width: 1000px;  float: left;}
+.sld {width: 3000px; }
+.sld li {width: 1000px;  float: left;}
          
-        .sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:skyblue; height: 290px;
-        border-radius: 20px;}
-        
-        .content{ background-color: white;
-        width: 50%; border-radius: 30px; padding: 5%;}
-
-        .imgbtn{position: relative; width: 15%;
-        }
-        .imgbtn:hover .btns{opacity: 1;}
-        .imgbtn img{width: 100%;}
-        .btns{position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: #333; display: flex; justify-content: space-evenly; opacity: 0;
-          transition: opacity 0.5s;
-         button{width: 40%; height: 100%;
-        background-color: white; color: #666; font-weight: bold;}
-         button:hover{opacity: 0.5;}
-        }
-
-         .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
-         .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
+.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:lightgrey; height: 290px;
+border-radius: 20px;}
+.content{ background-color: white;
+width: 50%; border-radius: 30px; padding: 1%;}
+.prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
+.next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}}
       
-
-
-
-//MD 추천도서 //
+//section 3 MD 추천도서 //
 
 #booklist{width:1100px; margin: 0 auto; margin-top: 5%;}
 #booklist ul { height:30%; background-color:white; display: flex;
-
 }
 #booklist li {width: 25%; height:25px; text-align: center; cursor:pointer; padding-top:7px; border-top: 1px solid #787878;}
 #booklist li:first-of-type{border-left: 1px solid #787878;}
@@ -108,55 +75,75 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
 
 .tab{position: relative;}
 .tab .imgbtn{position: relative; width: 85%; margin: 0 auto;}
+.imgbtn{position: relative; width: 15%;
+}
+.imgbtn:hover .btns{opacity: 1;}
+.imgbtn img{width: 100%;}
+.btns{position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: #333; display: flex; justify-content: space-evenly; opacity: 0;
+  transition: opacity 0.5s;
+ button{width: 40%; height: 100%;
+background-color: white; color: #666; font-weight: bold;}
+ button:hover{opacity: 0.5;}}
 
+// section 3 MD추천도서 클릭시 나오는부분 //
 
+#booklist li.active{background-color: skyblue; color:#fff; border-left: 1px solid skyblue; border-right: 1px solid
+skyblue;}
 
-
-      /*탭 선택시 나오는부분*/
-
-      #booklist li.active{background-color: skyblue; color:#fff; border-left: 1px solid skyblue; border-right: 1px solid
-          skyblue;}
-
-      .tab_list:not(:first-of-type) {display:none;}
-
-     .tab_list {width:1100px; height:770px; background-color: skyblue; }
-
-    
-     .box {width:200px; height:335px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
-     .box p {font-size:10px; color:#666; text-align:left;}
+.tab_list:not(:first-of-type) {display:none;}
+.tab_list {width:1100px; height:770px; background-color: skyblue; }
+.box {width:200px; height:335px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
+.box p {font-size:10px; color:#666; text-align:left;}
      
-    //  색션4 주간베스트
-     .sectionfour{margin: 0 auto; width:1000px; height: 350px; margin-top: 5%;
-     span{position: absolute; top:50%; display:none; font-size: 35px; color:#fff;  line-height: 40px; 
-     background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
-     span:hover{background: rgba(255,255,255,0.8); color:#000;}
+// section 4 주간베스트 //
 
-   
+.sectionfour{margin: 0 auto; width:1000px; height: 350px; margin-top: 5%;
+span{position: absolute; top:50%; display:none; font-size: 35px; color:#fff;  line-height: 40px; 
+background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
+span:hover{background: rgba(255,255,255,0.8); color:#000;}
+.mouseslider{border-radius: 20px;}
+h3{margin: 30px;}
+.titlelogoflex{display: flex; justify-content: space-between;}
+.lotatelogo:hover img{transition: all .5s linear; transform: rotate(180deg);
+}
 
-        * {margin: 0;}
-         ul,li,ol {list-style: none; margin: 0; padding: 0;}
-         .mouseslider {width: 1000px;  position: relative; overflow: hidden;}
+* {margin: 0;}
+ul,li,ol {list-style: none; margin: 0; padding: 0;}
+.mouseslider {width: 1000px;  position: relative; overflow: hidden;}
 
-         .sld {width: 3000px; }
-         .sld li {width: 1000px;  float: left;}
+.sld {width: 200%;  }
+.sld li {width: 10%;  float: left;
+}
          
-        .sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:skyblue; height: 290px;
-        border-radius: 20px;}
-        
-      
-        .imgbtn{position: relative; width: 15%;
-        }
-        .imgbtn:hover .btns{opacity: 1;}
-        .imgbtn img{width: 100%;}
-        .btns{position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: #333; display: flex; justify-content: space-evenly; opacity: 0;
-          transition: opacity 0.5s;}
-   
-         .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px; }
-         .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
-         
-        }
+.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:lightgray; height: 290px; }
+
+.imgbtn{position: relative; width: 15%;}
+.imgbtn:hover .btns{opacity: 1;}
+.imgbtn img{width: 100%;}
+.btns{position: absolute; bottom: 0; left: 0; width: 100%; height: 30px; background-color: #333; display: flex; justify-content: space-evenly; opacity: 0; transition: opacity 0.5s;}
+.prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px; }
+.next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}}
     
-            
+// section 5 
+.sectionfive{margin: 0 auto; width: 1000px;
+  margin-top: 5%; 
+.sldimg{height: 290px; background-color: lightgray; border-radius: 20px;}
+h3{margin: 20px;}
+.titlelogoflex{display: flex; justify-content: space-between; }
+.lotatelogo:hover img{transition: all .5s linear; transform: rotate(180deg);}
+.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:lightgrey; height: 290px;
+  border-radius: 20px;}
+.sldimg img{width: 100%;}
+.content{ background-color: white;
+  width: 50%; border-radius: 30px; padding: 1%;}
+.content h6,h4,p{margin: 5% 0;}
+.bookflex{display: flex; margin: 3% auto; width: 1000px;
+justify-content: space-evenly;}
+.bookflex .sldimg2{width: 300px; background-color:skyblue; height: 200px; 
+}
+}
+
+
         
                
    
