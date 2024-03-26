@@ -17,6 +17,57 @@ a {
   counter-reset: #333;
 }
 
+h6, h4, p {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #000;
+  transform: scaleY(0.3);
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.btn2 {
+  padding: 10px;
+  margin: 10px 4px;
+  color: #333;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid lightgray;
+}
+.btn2 span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn2:hover {
+  color: #fff;
+}
+
+.btn2:hover::before {
+  opacity: 1;
+  background-color: gray;
+  transform: scaleY(1);
+  transition: transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+}
+
+header {
+  width: 1100px;
+}
+
 header {
   margin: 0 auto;
   height: 300px;
@@ -44,7 +95,6 @@ header > div:nth-child(1) > div:nth-child(2) {
 header ul {
   display: flex;
   justify-content: flex-end;
-  font-weight: bold;
 }
 
 header ul li {
@@ -96,8 +146,13 @@ input {
   text-align: center;
 }
 
+.logomenu button {
+  background-color: white;
+  border: 1px solid lightgrey;
+  width: 10%;
+}
+
 footer {
-  border: 10px double skyblue;
   background-color: white;
   height: 400px;
   margin-top: 10%;
@@ -122,10 +177,9 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 2%;
-  background-color: skyblue;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
+  background-color: rgb(196, 238, 255);
+  color: black;
+  font-size: 15px;
 }
 
 .footerul li {
@@ -214,27 +268,11 @@ ul, li, ol {
 .sectiontwo {
   margin: 0 auto;
   width: 1000px;
-  height: 350px;
+  height: 300px;
   margin-top: 6%;
 }
-.sectiontwo span {
-  position: absolute;
-  top: 50%;
-  display: block;
-  font-size: 35px;
-  color: #fff;
-  line-height: 40px;
-  background: rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-  height: 50px;
-  transform: translateY(-50%);
-}
-.sectiontwo span:hover {
-  background: rgba(255, 255, 255, 0.8);
-  color: #000;
-}
-.sectiontwo content h6, .sectiontwo h4, .sectiontwo p {
-  margin: 5% 0;
+.sectiontwo .content h6, .sectiontwo h4, .sectiontwo p {
+  margin: 3% 0;
 }
 .sectiontwo h3 {
   margin: 30px;
@@ -252,6 +290,22 @@ ul, li, ol {
   position: relative;
   overflow: hidden;
 }
+.sectiontwo .mouseslider > span {
+  position: absolute;
+  top: 50%;
+  display: block;
+  font-size: 35px;
+  color: #fff;
+  line-height: 40px;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  height: 50px;
+  transform: translateY(-50%);
+}
+.sectiontwo .mouseslider > span:hover {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
 .sectiontwo .sld {
   width: 3000px;
 }
@@ -263,8 +317,8 @@ ul, li, ol {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: lightgrey;
-  height: 290px;
+  background-color: #eee;
+  height: 320px;
   border-radius: 20px;
 }
 .sectiontwo .content {
@@ -287,7 +341,7 @@ ul, li, ol {
 #booklist {
   width: 1100px;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 #booklist ul {
@@ -360,10 +414,10 @@ ul, li, ol {
 }
 
 #booklist li.active {
-  background-color: skyblue;
-  color: #fff;
-  border-left: 1px solid skyblue;
-  border-right: 1px solid skyblue;
+  background-color: rgb(196, 238, 255);
+  color: black;
+  border-left: 1px solid rgb(196, 238, 255);
+  border-right: 1px solid rgb(196, 238, 255);
 }
 
 .tab_list:not(:first-of-type) {
@@ -373,7 +427,7 @@ ul, li, ol {
 .tab_list {
   width: 1100px;
   height: 770px;
-  background-color: skyblue;
+  background-color: rgb(196, 238, 255);
 }
 
 .box {
@@ -384,8 +438,7 @@ ul, li, ol {
   margin: 20px;
   padding: 5px 15px;
   border-radius: 4px;
-  border: 1px solid #ddd;
-  box-shadow: 4px 4px 4px #eee;
+  box-shadow: 4px 4px 4px rgb(164, 199, 212);
 }
 
 .box p {
@@ -454,7 +507,7 @@ ul, li, ol {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: lightgray;
+  background-color: #eee;
   height: 290px;
 }
 .sectionfour .imgbtn {
@@ -497,7 +550,7 @@ ul, li, ol {
 }
 .sectionfive .sldimg {
   height: 290px;
-  background-color: lightgray;
+  background-color: #eee;
   border-radius: 20px;
 }
 .sectionfive h3 {
@@ -515,7 +568,6 @@ ul, li, ol {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: lightgrey;
   height: 290px;
   border-radius: 20px;
 }
@@ -529,7 +581,7 @@ ul, li, ol {
   padding: 1%;
 }
 .sectionfive .content h6, .sectionfive h4, .sectionfive p {
-  margin: 5% 0;
+  margin: 3% 0;
 }
 .sectionfive .bookflex {
   display: flex;
@@ -539,6 +591,11 @@ ul, li, ol {
 }
 .sectionfive .bookflex .sldimg2 {
   width: 300px;
-  background-color: skyblue;
-  height: 200px;
+  background-color: rgb(196, 238, 255);
+  height: 160px;
+  padding: 1%;
+}
+.sectionfive .bookflex img {
+  width: 20%;
+  height: 80%;
 }

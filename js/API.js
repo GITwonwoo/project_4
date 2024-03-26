@@ -165,7 +165,7 @@ for (let i = 0; i < count2.length; i++) {
             divs.eq(i).before("<img src='" + msg.documents[0].thumbnail + "'/>");
                
             let str = msg.documents[0].contents;
-            let str2 = str.substring(0, 150);
+            let str2 = str.substring(0, 60);
 
             divs.eq(i).children('.content1').prepend("<p>" + str2 + "..." + "</p>");       
             divs.eq(i).children('.content1').prepend("<h6>" + msg.documents[0].authors + "</h6>");

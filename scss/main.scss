@@ -44,29 +44,35 @@ ul,li,ol{list-style: none; margin: 0; padding: 0;}
   }
 
 //section 2 마우스 클릭 슬라이더 //
-.sectiontwo{margin: 0 auto; width:1000px; height: 350px; margin-top: 6%;
-span{position: absolute; top:50%; display: block; font-size: 35px; color:#fff; line-height: 40px; 
-background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
-span:hover{background: rgba(255,255,255,0.8); color:#000;} content h6,h4,p{margin: 5% 0;}
+.sectiontwo{margin: 0 auto; width:1000px; height: 300px; margin-top: 6%;
+
+.content h6,h4,p{margin: 3% 0;}
 h3{margin: 30px;}
            
 * {margin: 0;}
  ul,li,ol {list-style: none; margin: 0; padding: 0;}
- .mouseslider {width: 1000px;  position: relative; overflow: hidden;}
+ .mouseslider {width: 1000px;  position: relative; overflow: hidden;
+  &>span{position: absolute; top:50%; display: block; font-size: 35px; color:#fff; line-height: 40px; 
+    background: rgba(0,0,0,0.6); cursor: pointer; height: 50px; transform: translateY(-50%); }        
+  &>span:hover{background: rgba(255,255,255,0.8); color:#000;}
+}
 
 .sld {width: 3000px; }
-.sld li {width: 1000px;  float: left;}
-         
-.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:lightgrey; height: 290px;
+.sld li {width: 1000px;  float: left;}         
+.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:#eee; height: 320px;
 border-radius: 20px;}
-.content{ background-color: white;
-width: 50%; border-radius: 30px; padding: 1%;}
+.content{ background-color: white; 
+width: 50%; border-radius: 30px; padding: 1%}
+
+
+
 .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
-.next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}}
+.next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
+}
       
 //section 3 MD 추천도서 //
 
-#booklist{width:1100px; margin: 0 auto; margin-top: 5%;}
+#booklist{width:1100px; margin: 0 auto; margin-top: 10%;}
 #booklist ul { height:30%; background-color:white; display: flex;
 }
 #booklist li {width: 25%; height:25px; text-align: center; cursor:pointer; padding-top:7px; border-top: 1px solid #787878;}
@@ -87,12 +93,12 @@ background-color: white; color: #666; font-weight: bold;}
 
 // section 3 MD추천도서 클릭시 나오는부분 //
 
-#booklist li.active{background-color: skyblue; color:#fff; border-left: 1px solid skyblue; border-right: 1px solid
-skyblue;}
+#booklist li.active{background-color: rgb(196, 238, 255); color:black; border-left: 1px solid rgb(196, 238, 255);border-right: 1px solid
+  rgb(196, 238, 255);}
 
 .tab_list:not(:first-of-type) {display:none;}
-.tab_list {width:1100px; height:770px; background-color: skyblue; }
-.box {width:200px; height:335px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px; border:1px solid #ddd; box-shadow:4px 4px 4px #eee;}   
+.tab_list {width:1100px; height:770px; background-color: rgb(196, 238, 255); }
+.box {width:200px; height:335px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px;  box-shadow:4px 4px 4px rgb(164, 199, 212);}   
 .box p {font-size:10px; color:#666; text-align:left;}
      
 // section 4 주간베스트 //
@@ -115,7 +121,7 @@ ul,li,ol {list-style: none; margin: 0; padding: 0;}
 .sld li {width: 10%;  float: left;
 }
          
-.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:lightgray; height: 290px; }
+.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:#eee; height: 290px; }
 
 .imgbtn{position: relative; width: 15%;}
 .imgbtn:hover .btns{opacity: 1;}
@@ -127,20 +133,20 @@ ul,li,ol {list-style: none; margin: 0; padding: 0;}
 // section 5 
 .sectionfive{margin: 0 auto; width: 1000px;
   margin-top: 5%; 
-.sldimg{height: 290px; background-color: lightgray; border-radius: 20px;}
+.sldimg{height: 290px; background-color:#eee; border-radius: 20px;}
 h3{margin: 20px;}
 .titlelogoflex{display: flex; justify-content: space-between; }
 .lotatelogo:hover img{transition: all .5s linear; transform: rotate(180deg);}
-.sldimg{display: flex; align-items: center; justify-content: space-evenly; background-color:lightgrey; height: 290px;
+.sldimg{display: flex; align-items: center; justify-content: space-evenly; height: 290px;
   border-radius: 20px;}
 .sldimg img{width: 100%;}
 .content{ background-color: white;
   width: 50%; border-radius: 30px; padding: 1%;}
-.content h6,h4,p{margin: 5% 0;}
+.content h6,h4,p{margin: 3% 0;}
 .bookflex{display: flex; margin: 3% auto; width: 1000px;
 justify-content: space-evenly;}
-.bookflex .sldimg2{width: 300px; background-color:skyblue; height: 200px; 
-}
+.bookflex .sldimg2{width: 300px; background-color:rgb(196, 238, 255);  height: 160px; padding: 1%}
+.bookflex img{width: 20%; height: 80%; }
 }
 
 
