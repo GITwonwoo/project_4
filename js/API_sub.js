@@ -37,6 +37,7 @@ for (let i = 0; i < book.length; i++) {
             $('.title').append("<h3>" + msg.documents[0].title + "</h3>");
             $('.authors').append(msg.documents[0].authors + "");
             $('.publisher').append(msg.documents[0].publisher);
+            $('.isbn').append(msg.documents[0].isbn);
             
  
         });

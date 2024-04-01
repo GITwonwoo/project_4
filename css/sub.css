@@ -307,6 +307,10 @@ footer {
   height: 500px;
 }
 
+.bookinfo .title {
+  margin-bottom: 5%;
+}
+
 table tr:nth-of-type(5) td {
   border: 1px solid lightgray;
 }
@@ -317,28 +321,91 @@ table tr:nth-of-type(5) td {
   color: #787878;
 }
 
-.authors, .publisher, th, td {
+.isbnbox {
+  margin-bottom: 5%;
+}
+
+th, td, .Group, .bookinfo div:nth-of-type(3) {
   color: #787878;
 }
 
-.RedSale {
+.section1 tr {
+  display: flex;
+  align-items: center;
+}
+.section1 tr th {
+  text-align: left;
+  width: 100px;
+}
+.section1 tr th, .section1 tr td {
+  margin: 5% 10px 3% 0px;
+}
+.section1 tr .RedSale {
   color: red;
   font-weight: bold;
   font-size: 20px;
+  vertical-align: auto;
 }
-
-.Mileage {
-  font-weight: bold;
-}
-
-.RedFont {
+.section1 tr .RedFont {
   color: red;
 }
 
+.BoldGray {
+  font-weight: bold;
+  color: #787878;
+}
+
+.RedBTN {
+  background-color: rgb(238, 106, 106);
+  padding: 2%;
+}
+
+.tableLASTBOX {
+  margin-top: 15%;
+}
+
 .FlexInfor > div:nth-of-type(3) {
-  width: 25%;
+  width: 23%;
   height: 400px;
-  background-color: rebeccapurple;
+}
+.FlexInfor > div:nth-of-type(3) input {
+  border: #787878;
+  width: 50%;
+  text-align: right;
+}
+
+.cartbox {
+  background-color: rgb(245, 241, 241);
+}
+.cartbox hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cartbox div {
+  width: 75%;
+  height: 10%;
+  margin: 10% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartbox div:nth-of-type(2) {
+  background-color: rgb(238, 106, 106);
+}
+
+.cartbox div:nth-of-type(3) {
+  background-color: rgb(142, 197, 142);
+}
+
+.cartbox div:nth-of-type(4) {
+  background-color: lightgray;
+}
+
+.cartbox div:nth-of-type(5) {
+  background-color: white;
+  border: 1PX solid lightgrey;
 }
 
 /*----------------section2----------------*/

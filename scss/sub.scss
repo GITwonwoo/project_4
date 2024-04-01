@@ -14,20 +14,44 @@
     img{border: 1px solid lightgray; margin: 0 auto; width: 100%;}    
 }
 
+
 .FlexInfor>div:nth-of-type(2){width: 45%; height: 500px; 
 }
+.bookinfo .title{margin-bottom: 5%;}
 table tr:nth-of-type(5)td{border: 1px solid lightgray;
 }
 .bookinfo div:nth-of-type(1){border: 1px solid lightgray; width: 10%; color: #787878;
 }
-.authors,.publisher,th,td{color: #787878;}
-.RedSale{color: red; font-weight: bold; font-size: 20px;}
-.Mileage{font-weight: bold;}
+.isbnbox{margin-bottom: 5%;}
+
+th,td,.Group,.bookinfo div:nth-of-type(3){color: #787878;}
+.section1 tr{display: flex; align-items: center;
+th{text-align: left; width: 100px;} 
+th,td{margin: 5% 10px 3% 0px;}
+.RedSale{color: red; font-weight: bold; font-size: 20px; vertical-align:auto;}
 .RedFont{color: red;}
+}
+.BoldGray{font-weight: bold; color: #787878;} 
+.RedBTN{background-color: rgb(238, 106, 106);
+    padding: 2%;
+}
+.tableLASTBOX{margin-top: 15%;}
 
 
 
-.FlexInfor>div:nth-of-type(3){width: 25%; height: 400px;background-color: rebeccapurple;}
+.FlexInfor>div:nth-of-type(3){width: 23%; height: 400px;
+ input{border: #787878; width: 50%; text-align: right;}}
+.cartbox{background-color: rgb(245, 241, 241); 
+         hr{width: 80%; margin: 0 auto;}
+}
+.cartbox div{width: 75%; height: 10%; margin: 10% auto; display: flex; align-items: center; justify-content: center;
+}
+.cartbox div:nth-of-type(2){background-color: rgb(238, 106, 106);}
+.cartbox div:nth-of-type(3){background-color: rgb(142, 197, 142);}
+.cartbox div:nth-of-type(4){background-color: lightgray;}
+.cartbox div:nth-of-type(5){background-color:white; border: 1PX solid lightgrey;}
+
+
 
 /*----------------section2----------------*/
 .section2{width: 1000px; height: 600px;
