@@ -1,18 +1,16 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
 }
 
-ul, li, ol {
+ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: black;
-  counter-reset: #333;
 }
 
 h6, h4, p {
@@ -267,10 +265,6 @@ footer {
   transition: transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
 }
 
-#wrap {
-  width: 100%;
-}
-
 /*----------------section1----------------*/
 .section1 {
   width: 1000px;
@@ -300,6 +294,9 @@ footer {
   border: 1px solid lightgray;
   margin: 0 auto;
   width: 100%;
+}
+.FlexInfor > div:nth-of-type(1) a {
+  color: #787878;
 }
 
 .FlexInfor > div:nth-of-type(2) {
@@ -411,9 +408,8 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
 /*----------------section2----------------*/
 .section2 {
   width: 1000px;
-  height: 600px;
+  height: 500px;
   margin: 0 auto;
-  background-color: bisque;
 }
 .section2 table {
   width: 100%;
@@ -422,6 +418,9 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
 .section2 table, .section2 th, .section2 td {
   border: 1.5px solid gray;
   padding: 10px;
+}
+.section2 tr {
+  font-size: 12px;
 }
 .section2 th {
   width: 10%;
@@ -434,4 +433,82 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
 }
 .section2 .sld {
   display: flex;
+}
+.section2 h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section3 {
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
+  height: 1200px;
+}
+
+.popmenu {
+  width: 250px;
+  height: 800px;
+  background-color: #333;
+}
+
+.information {
+  width: 100%;
+}
+
+.information .tab {
+  text-align: center;
+  list-style: none;
+}
+
+.information .tab li {
+  width: 18%;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #333;
+  margin: 50px auto 20px;
+}
+
+.information p {
+  margin-top: 50px;
+}
+
+.active {
+  background-color: rgb(142, 197, 142);
+}
+
+/* 도서정보 */
+#product {
+  height: 200px;
+}
+
+/* 목차및 본문 */
+#review {
+  height: 200px;
+}
+
+/* 출판사 서평 */
+#publishertext li {
+  width: 100%;
+  list-style: disc;
+  text-align: left;
+}
+
+#publisher {
+  height: 200px;
+}
+
+/* 저자 및 역자정보 */
+#authors {
+  height: 200px;
+}
+
+/* 교환 및 환불 */
+#refund {
+  height: 200px;
+}
+
+#refundtext table {
+  border: 1px solid #787878;
+  width: 100px;
 }
