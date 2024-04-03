@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-ul {
+ul, li {
   list-style: none;
 }
 
@@ -202,7 +202,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 2%;
-  background-color: rgb(142, 197, 142);
+  background-color: rgb(194, 236, 194);
   color: black;
   font-size: 15px;
 }
@@ -268,7 +268,7 @@ footer {
 /*----------------section1----------------*/
 .section1 {
   width: 1000px;
-  height: 600px;
+  height: 550px;
   margin: 0 auto;
 }
 
@@ -443,13 +443,8 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
   display: flex;
   margin: 0 auto;
   width: 1000px;
-  height: 1200px;
-}
-
-.popmenu {
-  width: 250px;
-  height: 800px;
-  background-color: #333;
+  height: auto;
+  align-items: flex-start;
 }
 
 .information {
@@ -465,7 +460,7 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
   width: 18%;
   height: 30px;
   display: inline-block;
-  border: 1px solid #333;
+  border: 1px solid #787878;
   margin: 50px auto 20px;
 }
 
@@ -478,37 +473,95 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
 }
 
 /* 도서정보 */
-#product {
-  height: 200px;
+#product, #review, #publisher, #authors {
+  height: auto;
+}
+#product .productText, #product .reviewText, #product .publisherText,
+#product .authorsText, #review .productText, #review .reviewText, #review .publisherText,
+#review .authorsText, #publisher .productText, #publisher .reviewText, #publisher .publisherText,
+#publisher .authorsText, #authors .productText, #authors .reviewText, #authors .publisherText,
+#authors .authorsText {
+  padding: 0 30px;
+}
+#product .productText h3, #product .reviewText h3, #product .publisherText h3,
+#product .authorsText h3, #review .productText h3, #review .reviewText h3, #review .publisherText h3,
+#review .authorsText h3, #publisher .productText h3, #publisher .reviewText h3, #publisher .publisherText h3,
+#publisher .authorsText h3, #authors .productText h3, #authors .reviewText h3, #authors .publisherText h3,
+#authors .authorsText h3 {
+  text-align: center;
+}
+#product .productText p, #product .reviewText p, #product .publisherText p,
+#product .authorsText p, #review .productText p, #review .reviewText p, #review .publisherText p,
+#review .authorsText p, #publisher .productText p, #publisher .reviewText p, #publisher .publisherText p,
+#publisher .authorsText p, #authors .productText p, #authors .reviewText p, #authors .publisherText p,
+#authors .authorsText p {
+  text-align: justify;
 }
 
 /* 목차및 본문 */
 #review {
-  height: 200px;
+  height: auto;
 }
 
 /* 출판사 서평 */
-#publishertext li {
-  width: 100%;
-  list-style: disc;
-  text-align: left;
-}
-
 #publisher {
-  height: 200px;
+  height: auto;
 }
 
 /* 저자 및 역자정보 */
 #authors {
-  height: 200px;
+  height: auto;
 }
 
 /* 교환 및 환불 */
 #refund {
-  height: 200px;
+  height: auto;
+}
+
+#refundtext {
+  padding: 25px;
 }
 
 #refundtext table {
   border: 1px solid #787878;
-  width: 100px;
+  width: 100%;
+  border-collapse: collapse;
+}
+#refundtext table table, #refundtext table th, #refundtext table td {
+  border: 1.5px solid gray;
+  padding: 20px;
+}
+#refundtext table th {
+  width: 20%;
+}
+#refundtext table ul, #refundtext table li {
+  list-style: disc;
+}
+
+/*사이드 메뉴*/
+.popmenu {
+  width: 250px;
+  position: sticky;
+  top: 30px;
+  margin-top: 5%;
+}
+
+.popmenu img {
+  width: 50%;
+  margin-bottom: 10%;
+}
+
+.popmenuIMG {
+  display: flex;
+}
+
+.h5h6flex {
+  margin-left: 10%;
+}
+.h5h6flex h6 {
+  color: #787878;
+  padding: 5%;
+}
+.h5h6flex h5 {
+  font-weight: 100;
 }

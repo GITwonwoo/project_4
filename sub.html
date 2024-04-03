@@ -103,26 +103,7 @@
     </header>
 
     <div class="section1">
-        <div class="selectMenu">home
-            <select>
-                <option value="">dd</option>
-                <option value="">dd</option>
-                <option value="">dd</option>
-                <option value="">dd</option>
-            </select> &gt;
-            <select>
-                <option value="">dd</option>
-                <option value="">dd</option>
-                <option value="">dd</option>
-                <option value="">dd</option>
-            </select> &gt;
-            <select>
-                <option value="">dd</option>
-                <option value="">dd</option>
-                <option value="">dd</option>
-                <option value="">dd</option>
-            </select> &gt;
-        </div>
+   
         <div class="FlexInfor">
             <div>
                 <div class="book"></div>
@@ -155,8 +136,7 @@
                     </tr>
                     <tr>
                         <th>판매가</th>
-                        <td><span class="RedSale">15,300
-                            </span>원</td>
+                        <td><span class="RedSale"></span>원</td>
                     </tr>
                     <tr>
                         <th>적립금</th>
@@ -211,7 +191,7 @@
             <h4>이 책을 구매하신분들이 함께
                 구매하신 상품입니다.
             </h4>
-            <div class="mouseslider">
+            <div>
                 <ul class="sld">
                     <li class="sldimg"></li>
                     <li class="sldimg"></li>
@@ -231,22 +211,24 @@
 
             <div id="product">
                 <ul class="tab">
-                    <li class="active"><a href="#product">도서정보</a></li>
+                    <li class="active"><a href="#">도서정보</a></li>
                     <li><a href="#review">목차 및 본문</a></li>
                     <li><a href="#publisher">출판사서평</a></li>
                     <li><a href="#authors">저자 및 역자정보</a></li>
                     <li><a href="#refund">교환 및 환불</a></li>
                 </ul>
+                <div class="productText"></div>
             </div>
 
             <div id="review">
                 <ul class="tab">
                     <li><a href="#product">도서정보</a></li>
-                    <li class="active"><a href="#review">목차 및 본문</a></li>
+                    <li class="active"><a href="#">목차 및 본문</a></li>
                     <li><a href="#publisher">출판사서평</a></li>
                     <li><a href="#authors">저자 및 역자정보</a></li>
                     <li><a href="#refund">교환 및 환불</a></li>
                 </ul>
+                <div class="reviewText"></div>
             </div>
 
 
@@ -254,10 +236,11 @@
                 <ul class="tab">
                     <li><a href="#product">도서정보</a></li>
                     <li><a href="#review">목차 및 본문</a></li>
-                    <li class="active"><a href="#publisher">출판사서평</a></li>
+                    <li class="active"><a href="#">출판사서평</a></li>
                     <li><a href="#authors">저자 및 역자정보</a></li>
                     <li><a href="#refund">교환 및 환불</a></li>
                 </ul>
+                <div class="publisherText"></div>
             </div>
 
             <div id="authors">
@@ -265,9 +248,10 @@
                     <li><a href="#product">도서정보</a></li>
                     <li><a href="#review">목차 및 본문</a></li>
                     <li><a href="#publisher">출판사서평</a></li>
-                    <li class="active"><a href="#authors">저자 및 역자정보</a></li>
+                    <li class="active"><a href="#">저자 및 역자정보</a></li>
                     <li><a href="#refund">교환 및 환불</a></li>
                 </ul>
+                <div class="authorsText"></div>
             </div>
 
             <div id="refund">
@@ -276,27 +260,54 @@
                     <li><a href="#review">목차 및 본문</a></li>
                     <li><a href="#publisher">출판사서평</a></li>
                     <li><a href="#authors">저자 및 역자정보</a></li>
-                    <li class="active"><a href="#refund">교환 및 환불</a></li>
+                    <li class="active"><a href="#">교환 및 환불</a></li>
+                    <div class="refundText"></div>
                 </ul>
 
                 <div id="refundtext">
                 
                         <table>
                             <tr>
-                                <th></th>
-                                <td></td>
+                                <th><h5>교환/반품 방법</h5></th>
+                                <td><h6>마이페이지 > 주문관리 > 주문/배송조회 > 주문조회 후  [1:1상담신청]  또는 고객센터 (1544-9020)
+                                    ※ 오픈마켓, 해외배송 주문상품 문의 시 [1:1상담신청] 또는 고객센터 (1544-9020)</h6></td>
                             </tr>
                             <tr>
-                                <th></th>
-                                <td></td>
+                                <th><h5>교환/반품 가능기간</h5></th>
+                                <td>
+                                    <h6>
+                                        <ul>
+                                            <li>변심반품의 경우 수령 후 7일 이내</li>
+                                            <li>상품의 결함 및 계약내용과 다를 경우 문제점 발견 후 30일 이내</li>
+                                        </ul>
+                                    </h6>
+                                </td>
                             </tr>
                             <tr>
-                                <th></th>
-                                <td></td>
+                                <th><h5>교환/반품 비용</h5></th>
+                                <td>
+                                    <h6>
+                                        <ul>
+                                            <li>단순변심 혹은 구매착오로 인한 반품/교환은 반송료 고객 부담</li>
+                                            <li>해외직배송 도서 구매 후 단순변심에 의한 취소 및 반품 시 도서판매가의 20% 수수료 부과</li>
+                                        </ul>
+                                    </h6>
+                                </td>
                             </tr>
                             <tr>
-                                <th></th>
-                                <td></td>
+                                <th><h5>교환/반품 불가사유</h5></th>
+                                <td>
+                                    <h6>
+                                        <ul>
+                                            <li>소비자의 책임 있는 사유로 상품 등이 손실 또는 훼손된 경우</li>
+                                            <li>소비자의 사용, 포장 개봉에 의해 상품 등의 가치가 현저히 감소한 경우<br>
+                                                예) 만화, 잡지, 수험서 및 문제집류</li>
+                                            <li>소비자의 요청에 따라 개별적으로 주문 제작되는 상품의 경우</li>
+                                            <li>디지털 컨텐츠인 eBook, 오디오북 등을 1회 이상 다운로드를 받았을 경우</li>
+                                        
+                                        </ul>
+                                    </h6>
+                                </td>
                             </tr>
                         </table>
                  
@@ -305,12 +316,24 @@
 
         </div>
         <div class="popmenu">
+            <h4>이 분야의 베스트</h4><br>
+            <hr><br>
             <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div class="popmenuIMG">                    
+                    <div class="h5h6flex"></div>                    
+                </div>
+                <div class="popmenuIMG">
+                    <div class="h5h6flex"></div>
+                </div>
+                <div class="popmenuIMG">
+                    <div class="h5h6flex"></div>
+                </div>
+                <div class="popmenuIMG">
+                    <div class="h5h6flex"></div>
+                </div>
+                <div class="popmenuIMG">
+                    <div class="h5h6flex"></div>
+                </div>
             </div>
         </div>
     </div>

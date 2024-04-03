@@ -6,56 +6,6 @@ footer h6,h4{font-family: 'Noto Sans KR', sans-serif;}
 #warp{margin: 0 auto;}
 
 
-// //section 1 list 마우스호버 //
-// #slider{height: 400px;margin: 0 auto;}
-// .sliderlist{display: flex; width: 1100px; margin: 0 auto;}
-// .sliderlist li{box-sizing: content-box; border: 10px double rgb(142, 197, 142); width: 100%;  text-align: center; margin:0 2px;
-// }
-// .sliderlist li:hover{cursor: pointer;}
-// .sliderlist p{background-color:rgb(142, 197, 142); font-weight: bold;}
-// .sliderflugin{height: 500px;}
-
-       
-//             .sliderbox p::before {
-//               content: "";
-//               position: absolute;
-//               top: 0;
-//               left: 0;
-//               display: block;
-//                width: 100%;
-//               height: 100%;
-//               z-index: 1;
-//               background-color: #000;
-//               -webkit-transform: scaleY(.3);
-//               transform: scaleY(.3);
-//               opacity: 0;
-//               transition: all .3s
-//               }
-              
-//             .sliderbox p{
-                
-//             color: white;
-//             font-family: sans-serif;
-//             // text-transform: uppercase;
-//             // text-align: center;
-//             position: relative;
-//             // text-decoration: none;
-//             // display:inline-block;
-//              // border: 1px solid lightgray;
-//             a{position: relative; z-index: 2;color: white; }
-                  
-//             }
-//             .sliderbox p:hover {color: #fff;}
-//             .sliderbox p:hover::before {
-//                           opacity: 1;
-//                           background-color: #DB5165;
-//                           -webkit-transform: scaleY(1); 
-//                           transform: scaleY(1);
-//                           transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s; z-index: 1;
-//                           transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
-//                       }
-
-//section 1 대형 슬라이더//
 .bigswiper {
     position: relative;
     height: 100%;
@@ -85,7 +35,7 @@ footer h6,h4{font-family: 'Noto Sans KR', sans-serif;}
   }
 
 //section 2 마우스 클릭 슬라이더 //
-.sectiontwo{margin: 0 auto; width:1000px; height: 300px; margin-top: 6%;
+.sectiontwo{margin: 0 auto; width:1000px; height: 300px; margin-top: 3%;
 
 .content h6,h4,p{margin: 3% 0;}
 h3{margin: 30px;}
@@ -133,11 +83,11 @@ background-color: white; color: #666; font-weight: bold;}
 
 // section 3 MD추천도서 클릭시 나오는부분 //
 
-#booklist li.active{background-color: rgb(142, 197, 142); color:black; border-left: 1px solid rgb(142, 197, 142) ;border-right: 1px solid
-  rgb(142, 197, 142);}
+#booklist li.active{background-color: rgb(194, 236, 194); color:black; border-left: 1px solid rgb(194, 236, 194) ;border-right: 1px solid
+  rgb(194, 236, 194);}
 
 .tab_list:not(:first-of-type) {display:none;}
-.tab_list {width:1100px; height:770px; background-color: rgb(142, 197, 142); }
+.tab_list {width:1100px; height:770px; background-color: rgb(194, 236, 194); }
 .box {width:200px; height:335px; float:left; text-align:center; margin:20px; padding:5px 15px; border-radius:4px;  box-shadow:4px 4px 4px rgb(59, 85, 59);}   
 .box p {font-size:10px; color:#666; text-align:left;}
      
@@ -183,7 +133,7 @@ h3{margin: 20px;}
 .content h6,h4,p{margin: 3% 0;}
 .bookflex{display: flex; margin: 3% auto; width: 1000px;
 justify-content: space-evenly;}
-.bookflex .sldimg2{width: 300px; background-color:rgb(142, 197, 142);  height: 160px; padding: 1%}
+.bookflex .sldimg2{width: 300px; background-color:rgb(194, 236, 194);  height: 160px; padding: 1%}
 .bookflex img{width: 20%; height: 80%; }
 }
 

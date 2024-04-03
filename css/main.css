@@ -8,7 +8,7 @@ footer h6, h4 {
   padding: 0;
 }
 
-ul {
+ul, li {
   list-style: none;
 }
 
@@ -206,7 +206,7 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 2%;
-  background-color: rgb(142, 197, 142);
+  background-color: rgb(194, 236, 194);
   color: black;
   font-size: 15px;
 }
@@ -309,7 +309,7 @@ footer {
   margin: 0 auto;
   width: 1000px;
   height: 300px;
-  margin-top: 6%;
+  margin-top: 3%;
 }
 .sectiontwo .content h6, .sectiontwo h4, .sectiontwo p {
   margin: 3% 0;
@@ -446,10 +446,10 @@ footer {
 }
 
 #booklist li.active {
-  background-color: rgb(142, 197, 142);
+  background-color: rgb(194, 236, 194);
   color: black;
-  border-left: 1px solid rgb(142, 197, 142);
-  border-right: 1px solid rgb(142, 197, 142);
+  border-left: 1px solid rgb(194, 236, 194);
+  border-right: 1px solid rgb(194, 236, 194);
 }
 
 .tab_list:not(:first-of-type) {
@@ -459,7 +459,7 @@ footer {
 .tab_list {
   width: 1100px;
   height: 770px;
-  background-color: rgb(142, 197, 142);
+  background-color: rgb(194, 236, 194);
 }
 
 .box {
@@ -615,7 +615,7 @@ footer {
 }
 .sectionfive .bookflex .sldimg2 {
   width: 300px;
-  background-color: rgb(142, 197, 142);
+  background-color: rgb(194, 236, 194);
   height: 160px;
   padding: 1%;
 }
