@@ -18,8 +18,16 @@ for (let i = 0; i < book.length; i++) {
             $('.authors').append(msg.documents[0].authors + "");
             $('.publisher').append(msg.documents[0].publisher);
             $('.isbn').append(msg.documents[0].isbn);
-            $('.RedSale').append(msg.documents[0].price);
 
+            let price = msg.documents[0].price;
+            price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+            $('.pri').append(price)
+
+            let sprice = msg.documents[0].sale_price;
+            sprice = sprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")            
+            $('.RedSale').append(sprice);
+
+        
         });
 }
 
@@ -84,10 +92,17 @@ for (let i = 0; i < side.length; i++) {
             divs.eq(i).prepend("<img src='" + msg.documents[0].thumbnail + "'/>");
 
             divs.eq(i).find(".h5h6flex").append("<h5>" + msg.documents[0].title + "</h5>");
-            divs.eq(i).find(".h5h6flex").append("<h6>" + msg.documents[0].authors + "</h6>");
-            divs.eq(i).find(".h5h6flex").append("<h6>" + msg.documents[0].price+ "원"+"</h6>");
+            divs.eq(i).find(".h5h6flex").append("<p>" + msg.documents[0].authors + "</p>");
+            // divs.eq(i).find(".h5h6flex").append("<p>" + msg.documents[0].price+ "원"+"</p>");
 
 
+            let aprice = msg.documents[0].price;
+            aprice = aprice.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            divs.eq(i).find(".h5h6flex").append("<p>" +aprice + "</p>")
+            
+            // let price = msg.documents[0].price;
+            // price = price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+            // $('.pri').append(price)    
         });
 }
 

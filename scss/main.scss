@@ -1,8 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
-footer h6,h4{font-family: 'Noto Sans KR', sans-serif;}         
 @import"reset","common";
-
 #warp{margin: 0 auto;}
 
 
@@ -131,11 +128,14 @@ h3{margin: 20px;}
 .content{ background-color: white;
   width: 50%; border-radius: 30px; padding: 1%;}
 .content h6,h4,p{margin: 3% 0;}
-.bookflex{display: flex; margin: 3% auto; width: 1000px;
+.bookflex{display: flex; margin: 10% auto; width: 1000px;
 justify-content: space-evenly;}
-.bookflex .sldimg2{width: 300px; background-color:rgb(194, 236, 194);  height: 160px; padding: 1%}
+.bookflex .sldimg2{width: 300px;  height: 160px; padding: 1%}
 .bookflex img{width: 20%; height: 80%; }
+
 }
+h6,h5{color: #6b6969;}
+p{color:  #6b6969;}
 
 
         

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
-footer h6, h4 {
+footer, p, h3, h6, h4, h5, li {
   font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -15,10 +15,6 @@ ul, li {
 a {
   text-decoration: none;
   color: black;
-}
-
-h6, h4, p {
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 header {
@@ -609,17 +605,24 @@ footer {
 }
 .sectionfive .bookflex {
   display: flex;
-  margin: 3% auto;
+  margin: 10% auto;
   width: 1000px;
   justify-content: space-evenly;
 }
 .sectionfive .bookflex .sldimg2 {
   width: 300px;
-  background-color: rgb(194, 236, 194);
   height: 160px;
   padding: 1%;
 }
 .sectionfive .bookflex img {
   width: 20%;
   height: 80%;
+}
+
+h6, h5 {
+  color: #6b6969;
+}
+
+p {
+  color: #6b6969;
 }

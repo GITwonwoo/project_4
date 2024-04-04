@@ -36,7 +36,7 @@ for (let i = 0; i < choice.length; i++) {
             const divs = $(".sectionthree .tab_list").eq(0).children(".sectionthree .box");
             divs.eq(i).children('.sectionthree .imgbtn').prepend("<img src='" + msg.documents[0].thumbnail + "'/>");
             divs.eq(i).append("<h4>" + msg.documents[0].title + "</h4>");
-            divs.eq(i).append("<h5>" + msg.documents[0].authors + "</h5>");
+            divs.eq(i).append("<h6>" + msg.documents[0].authors + "</h6>");
 
    
            

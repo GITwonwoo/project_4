@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+footer, p, h3, h6, h4, h5, li {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +16,6 @@ ul, li {
 a {
   text-decoration: none;
   color: black;
-}
-
-h6, h4, p {
-  font-family: "Noto Sans KR", sans-serif;
 }
 
 header {
@@ -435,8 +436,11 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
   display: flex;
 }
 .section2 h4 {
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 20px;
+}
+.section2 h6 {
+  color: #787878;
 }
 
 .section3 {
@@ -445,6 +449,14 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
   width: 1000px;
   height: auto;
   align-items: flex-start;
+}
+.section3 h5 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.section3 p {
+  font-size: 15px;
+  color: #787878;
 }
 
 .information {
@@ -534,6 +546,9 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
 #refundtext table th {
   width: 20%;
 }
+#refundtext table h6, #refundtext table li {
+  font-weight: 500;
+}
 #refundtext table ul, #refundtext table li {
   list-style: disc;
 }
@@ -562,6 +577,6 @@ th, td, .Group, .bookinfo div:nth-of-type(3) {
   color: #787878;
   padding: 5%;
 }
-.h5h6flex h5 {
-  font-weight: 100;
+.h5h6flex p {
+  font-size: 12px;
 }
