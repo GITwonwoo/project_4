@@ -4,7 +4,7 @@ for (let i = 0; i < banner.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: banner[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
@@ -28,7 +28,7 @@ for (let i = 0; i < choice.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: choice[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
@@ -49,7 +49,7 @@ for (let i = 0; i < newbook.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: newbook[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
@@ -71,7 +71,7 @@ for (let i = 0; i < steady.length; i++) {
 
 $.ajax({
     method:"GET" , 
-    url: "https:dapi.kakao.com/v3/search/book?target=title",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
     data: { query: steady[i] },
     headers:{Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332"}
    })
@@ -92,7 +92,7 @@ $.ajax({
 
 $.ajax({
     method:"GET" , 
-    url: "https:dapi.kakao.com/v3/search/book?target=title",
+    url: "https://dapi.kakao.com/v3/search/book?target=title",
     data:{query: "개그",},
     headers:{Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332"}
    })
@@ -116,7 +116,7 @@ for (let i = 0; i < best.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: best[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
@@ -134,7 +134,7 @@ for (let i = 0; i < count.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: count[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
@@ -156,7 +156,7 @@ for (let i = 0; i < count2.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: count2[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })

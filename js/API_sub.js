@@ -5,7 +5,7 @@ for (let i = 0; i < book.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: book[0] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
@@ -38,7 +38,7 @@ for (let i = 0; i < together.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: together[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
@@ -82,7 +82,7 @@ for (let i = 0; i < side.length; i++) {
 
     $.ajax({
         method: "GET",
-        url: "https:dapi.kakao.com/v3/search/book?target=title",
+        url: "https://dapi.kakao.com/v3/search/book?target=title",
         data: { query: side[i] },
         headers: { Authorization: "KakaoAK 7fd50bb6d443accb5e07119127aae332" }
     })
